@@ -6,7 +6,7 @@
 #    By: cpierre <cpierre@student.42.fr>            +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2017/02/15 11:23:02 by cpierre           #+#    #+#              #
-#    Updated: 2017/11/18 17:33:09 by cpierre          ###   ########.fr        #
+#    Updated: 2017/11/18 18:03:01 by cpierre          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -21,9 +21,9 @@ git:
 		@bash lftclean.sh
 		@echo $(CMT_READ_MSG)
 		@echo "\\033[92mSuccessfully cleaned libft\\033[0m\n\n\\033[34mPushing to git repository...\\033[0m"
-		git add *
+		@git add *
 		@read -p "$(CMT_READ_MSG)" msg; \
-		@echo "\\033[0m"; \
+		echo "\\033[0m"; \
 		git commit -m "LibftV4 - Build $(BUILD) - $$msg"
-		git push
+		@git push
 		@echo "\\033[92mSuccesfully pushed LibftV4 to git repository\\033[0m"
