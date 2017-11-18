@@ -6,7 +6,7 @@
 #    By: cpierre <cpierre@student.42.fr>            +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2017/02/15 11:23:02 by cpierre           #+#    #+#              #
-#    Updated: 2017/11/18 18:45:30 by cpierre          ###   ########.fr        #
+#    Updated: 2017/11/18 18:47:06 by cpierre          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -31,6 +31,6 @@ git:
 		@git add *
 		@read -p "$(CMT_READ_MSG)" msg; \
 		echo "\\033[0m"; \
-		git commit -m "LibftV4 - Ver. $(VERSION) b. $(BUILD) - $$msg"
+		git commit -m "LibftV4 - Ver.$(VERSION) b.$(BUILD) - $$msg"
 		@git push
 		@echo "\\033[92mSuccesfully pushed LibftV4 to git repository\\033[0m"
